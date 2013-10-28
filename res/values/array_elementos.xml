@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="albumes_array">
+        <item>Seleccionar álbum</item>
+        <item>Corta Venas</item>
+        <item>Flores rojas</item>
+        <item>Amo al mundo</item>
+        <item>Las tinieblas</item>
+        <item>Jupiter</item>
+    </string-array>
+     <string-array name="generos_array">
+        <item>Seleccionar género</item>
+        <item>Bachata</item>
+        <item>Rock</item>
+        <item>Punck Rock</item>
+        <item>Reggaeton</item>
+        <item>Salsa</item>
+    </string-array>
+</resources>

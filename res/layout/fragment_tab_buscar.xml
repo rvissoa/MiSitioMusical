@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="88dp"
+        android:layout_y="72dp"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/textViewFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="11dp"
+        android:layout_y="87dp"
+        android:text="Fecha: "
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="12dp"
+        android:layout_y="37dp"
+        android:text="Genero: "
+        android:textSize="15dp" />
+
+    <Spinner
+        android:id="@+id/SpinnerGeneroBuscar"
+        android:layout_width="202dp"
+        android:layout_height="29dp"
+        android:layout_x="94dp"
+        android:layout_y="34dp"
+        android:background="@color/negro"
+        android:popupBackground="@color/negro"
+        android:textColor="@color/negro" />
+
+    <TextView
+        android:id="@+id/textViewAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="16dp"
+        android:layout_y="140dp"
+        android:text="Album: "
+        android:textSize="15dp" />
+
+    <Spinner
+        android:id="@+id/spinnerAlbumes"
+        android:layout_width="202dp"
+        android:layout_height="29dp"
+        android:layout_x="94dp"
+        android:layout_y="136dp"
+        android:background="@color/negro"
+        android:popupBackground="@color/negro"
+        android:textColor="@color/negro" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="91dp"
+        android:layout_y="186dp"
+        android:ems="10"
+        android:hint="Ingresar cancion"
+        android:textColorHint="@color/blue" />
+
+    <TextView
+        android:id="@+id/textViewCancion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="14dp"
+        android:layout_y="197dp"
+        android:text="Cancion: "
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textViewCalificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="13dp"
+        android:layout_y="263dp"
+        android:text="Calificacion: "
+        android:textSize="15dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBarCalificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="117dp"
+        android:layout_y="236dp"
+        android:maxHeight="10dp"
+        android:minHeight="50dip"
+        android:numStars="4" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="115dp"
+        android:layout_y="313dp"
+        android:text="Buscar" />
+
+</AbsoluteLayout>

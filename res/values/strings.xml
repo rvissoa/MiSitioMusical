@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mi Sitio Musical</string>
+    <string name="action_settings">Configuraciones</string>
+    <string name="editTextUsuario">Ingresar su usuario</string>
+    <string name="editTextClave">Ingresar su clave</string>
+    <string name="hello_world">Hola mundo =)</string>
+
+    <color name="blanco">#ffffff</color>
+    <color name="negro">#000000</color>
+	<color name="yellow">#E5F415</color>
+	<color name="blue">#2015F4</color>
+	
+    <string name="title_activity_menu_manager">MainActivity</string>
+    <string name="title_activity_gestionar_canciones">GestionarCanciones</string>
+
+</resources>
