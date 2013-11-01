@@ -2,39 +2,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondot"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MenuManagerActivity" >
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/gestionarCanciones"
-        android:layout_below="@+id/gestionarCanciones"
-        android:layout_marginTop="50dp"
-        android:text="Gestionar Conciertos" />
-
-    <Button
-        android:id="@+id/gestionarCanciones"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:onClick="gestionarCanciones"
-        android:text="Gestionar Canciones" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/gestionarCanciones"
-        android:layout_alignLeft="@+id/gestionarCanciones"
-        android:layout_marginBottom="39dp"
-        android:text="Ver Perfil" />
 
     <TextView
         android:id="@+id/textView1"
@@ -46,5 +18,50 @@
         android:layout_marginTop="34dp"
         android:text="Bienvenido! usuario: manager"
         android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/buttonVerPerfil"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonGestionarAlbumes"
+        android:layout_alignLeft="@+id/textView1"
+        android:drawableTop="@drawable/icono_perfil"
+        android:text="Perfil" />
+
+    <Button
+        android:id="@+id/buttonGestionarAlbumes"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonVerPerfil"
+        android:layout_below="@+id/gestionarMusica"
+        android:layout_marginTop="52dp"
+        android:drawableTop="@drawable/album_disco"
+        android:text="Albumes" />
+
+    <Button
+        android:id="@+id/buttonVerNovedades"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonGestionarAlbumes"
+        android:layout_alignBottom="@+id/buttonGestionarAlbumes"
+        android:layout_alignRight="@+id/gestionarMusica"
+        android:drawableTop="@drawable/icono_novedades"
+        android:text="Novedades" />
+
+    <Button
+        android:id="@+id/gestionarMusica"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="56dp"
+        android:drawableTop="@drawable/gestionar_musica"
+        android:onClick="gestionarCanciones"
+        android:text="Musica" />
 
 </RelativeLayout>
