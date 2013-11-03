@@ -8,7 +8,11 @@ import android.os.Bundle;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
+import android.text.AndroidCharacter;
+import android.util.Log;
 import android.view.Menu;
+import android.widget.TabHost;
+import android.widget.TabHost.OnTabChangeListener;
 
 public class GestionarCanciones extends Activity {
 
@@ -16,6 +20,21 @@ public class GestionarCanciones extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_gestionar_canciones);
+		TabHost tabHost=(TabHost)findViewById(android.R.id.tabhost);
+		tabHost.setup();
+	       tabHost.addTab(tabHost.newTabSpec("tabListaCanciones").setIndicator( 
+	          "Canciones", null).setContent(R.id.tabListaCanciones));
+	       tabHost.addTab(tabHost.newTabSpec("tabListaAlbumes").setIndicator( 
+	          "Albumes", null).setContent(R.id.tabListaAlbumes));
+	       tabHost.setCurrentTab(0);
+			
+			tabHost.setOnTabChangedListener(new OnTabChangeListener() {
+			    @Override
+			    public void onTabChanged(String tabId) {
+			        Log.i("AndroidTabsDemo", "Pulsada pestaña: " + tabId);
+			    }
+			});
+		/*
 		//Obtenemos una referencia a la actionbar
 	    ActionBar abar = getActionBar();
 	 
@@ -41,7 +60,7 @@ public class GestionarCanciones extends Activity {
 	        //Añadimos las pestañas a la action bar
 	        abar.addTab(tab1);
 	        abar.addTab(tab2);
-		
+		*/
 	}
 
 	@Override

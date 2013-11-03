@@ -10,38 +10,6 @@
     android:background="@color/skyblue"
     >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="26dp"
-        android:layout_marginTop="34dp"
-        android:text="Bienvenido! usuario: manager"
-        android:textSize="20dp" />
-
-    <Button
-        android:id="@+id/buttonVerPerfil"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/buttonGestionarAlbumes"
-        android:layout_alignLeft="@+id/textView1"
-        android:drawableTop="@drawable/icono_perfil"
-        android:text="Perfil" />
-
-    <Button
-        android:id="@+id/buttonGestionarAlbumes"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/buttonVerPerfil"
-        android:layout_below="@+id/gestionarMusica"
-        android:layout_marginTop="52dp"
-        android:drawableTop="@drawable/album_disco"
-        android:text="Albumes" />
-
     <Button
         android:id="@+id/buttonVerNovedades"
         style="?android:attr/buttonStyleSmall"
@@ -53,6 +21,16 @@
         android:drawableTop="@drawable/icono_novedades"
         android:text="Novedades" />
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Bienvenido! usuario: manager"
+        android:textSize="20dp" />
+
     <Button
         android:id="@+id/gestionarMusica"
         style="?android:attr/buttonStyleSmall"
@@ -60,10 +38,32 @@
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/textView1"
         android:layout_below="@+id/textView1"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="43dp"
         android:drawableTop="@drawable/gestionar_musica"
         android:onClick="gestionarCanciones"
         android:text="Musica" />
+
+    <Button
+        android:id="@+id/buttonVerPerfil"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gestionarMusica"
+        android:layout_alignBottom="@+id/gestionarMusica"
+        android:layout_alignLeft="@+id/textView1"
+        android:drawableTop="@drawable/icono_perfil"
+        android:text="Perfil" />
+
+    <Button
+        android:id="@+id/buttonGestionarAlbumes"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonVerPerfil"
+        android:layout_below="@+id/buttonVerPerfil"
+        android:layout_marginTop="70dp"
+        android:drawableTop="@drawable/icono_amigos"
+        android:text="Amigos" />
 
 </RelativeLayout>
