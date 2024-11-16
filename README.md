@@ -1,4 +1,4 @@
 MiSitioMusical
 ==============
 
-Este sitio es alternativo y mejorado funciona perfectamente
+Este sitio es alternativo y mejorado funciona perfectamente.
